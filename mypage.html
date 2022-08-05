@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/reset.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <title>마이페이지: 주문목록/배송조회</title>
+</head>
+<body>
+    <header id="header"></header>
+    <!-- header - e -->
+    <div id="container" class="mypage order-list">
+        <div class="location">
+            <div class="wrapper">
+                <a href="index.html" class="location-link">HOME</a>
+                <a href="mypage.html" class="location-link">주문목록/배송조회</a>
+            </div>
+        </div>
+        <section class="side-nav-cont">
+            <div class="wrapper">
+                <div class="side-nav">
+                    <ul>
+                        <li>
+                            <span>주문정보</span>
+                            <a href="mypage.html" class="active">주문목록/배송조회</a>
+                            <a href="#;">취소/반품/교환 내역</a>
+                            <a href="#;">환불/입금 내역</a>
+                        </li>
+                        <li>
+                            <span>상품 히스토리</span>
+                            <a href="#;">늘 주문상품</a>
+                            <a href="#;">찜한상품</a>
+                            <a href="#;">최근 본 상품</a>
+                        </li>
+                        <li>
+                            <span>혜택관리</span>
+                            <a href="#;">쿠폰</a>
+                            <a href="#;">마일리지</a>
+                            <a href="#;">포인트</a>
+                            <a href="#;">예치금</a>
+                        </li>
+                        <li>
+                            <span>나의 상품문의</span>
+                            <a href="#;">나의 상품문의</a>
+                            <a href="#;">납품상담현황</a>
+                        </li>
+                        <li>
+                            <span>회원정보</span>
+                            <a href="#;">회원정보 수정</a>
+                            <a href="#;">간편결제 등록</a>
+                            <a href="#;">배송지 관리</a>
+                            <a href="#;">회원 탈퇴</a>
+                        </li>
+                        <li>
+                            <span>고객센터</span>
+                            <a href="#;">1:1 문의</a>
+                            <a href="phone-counseling.html">전화상담예약</a>
+                            <a href="#;">공지사항</a>
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- side navigation - e -->
+                <div class="content">
+                    <ul class="user__info">
+                        <li>
+                            <img src="img/user-level-icon.png" alt="VIP"/>
+                            <p><em>테스트</em>님의 회원등급은<br>
+                            <em>VIP회원등급(사업자회원)</em> 입니다.</p>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-ticket-alt"></i></span>
+                            <p>
+                                <b>쿠폰</b>
+                                <strong>18</strong>장
+                            </p>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-coins"></i></span>
+                            <p>
+                                <b>마일리지</b>
+                                <strong>141,110</strong>원
+                            </p>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-gift"></i></span>
+                            <p>
+                                <b>포인트</b>
+                                <strong>12,370</strong>개
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="delivery__info">
+                        <h4 class="title">주문목록/배송조회</h4>
+                        <div class="history">
+                            <span>조회기간</span>
+                            <form>
+                                <div class="history-btn">
+                                    <button type="button">오늘</button>
+                                    <button type="button" class="active">7일</button>
+                                    <button type="button">15일</button>
+                                    <button type="button">1개월</button>
+                                    <button type="button">3개월</button>
+                                    <button type="button">1년</button>
+                                </div>
+                                <input type="text" name="wDate[]" class="anniversary lastweek">~
+                                <input type="text" name="wDate[]" class="anniversary today">
+                                <button type="submit">조회 <i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="mobile-history">
+                            <select>
+                                <option>7일</option>
+                                <option>15일</option>
+                                <option>1개월</option>
+                                <option>3개월</option>
+                                <option>1년</option>
+                            </select>
+                        </div>
+                        <div class="details">
+                            <h4 class="details-title">주문목록 / 배송조회 내역 총 <span>0</span> 건</h4>
+                            <div class="order-form">
+                                <div class="form-header">
+                                    <span>날짜/주문번호</span>
+                                    <span>상품명/옵션</span>
+                                    <span>상품금액/수량</span>
+                                    <span>주문상태</span>
+                                    <span>확인/리뷰</span>
+                                </div>
+                                <div class="form-body">
+                                    <div class="order-item basic">
+                                        <div class="item-date" style="grid-row:span 3;">
+                                            <span>2021/11/08</span>
+                                            <a href="#;">1234567891011</a>
+                                            <button type="button">주문취소</button>
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                <input type="checkbox">
+                                                <img src="img/goods/goods-list-1.jpg" alt="img"/>
+                                                <span>빅트레인 바닐라 라떼 1.59kg</span>
+                                            </div>
+                                            <span class="item-price"><b>29,900원</b><span>1개</span></span>
+                                            <span class="item-status">입금대기중</span>
+                                            <button type="button" class="item-review">리뷰쓰기</button>
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                <input type="checkbox">
+                                                <img src="img/goods/goods-list-2.jpg" alt="img"/>
+                                                <span>세미 베버시티 고구마라떼 페이스트 1kg</span>
+                                            </div>
+                                            <span class="item-price"><b>6,800원</b><span>1개</span></span>
+                                            <span class="item-status">입금대기중</span>
+                                            <button type="button" class="item-review">리뷰쓰기</button>
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                <input type="checkbox">
+                                                <img src="img/goods/goods-list-3.jpg" alt="img"/>
+                                                <span>립톤 복숭아맛 907g</span>
+                                            </div>
+                                            <span class="item-price"><b>6,280원</b><span>2개</span></span>
+                                            <span class="item-status">입금대기중</span>
+                                            <button type="button" class="item-review">리뷰쓰기</button>
+                                        </div>
+                                    </div>
+                                    <div class="order-item business">
+                                        <div class="item-date">
+                                            <span>2021/11/08</span>
+                                            <a href="#;">1234567891012</a>
+                                            <button type="button">주문취소</button>
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                <input type="checkbox">
+                                                <img src="img/goods/goods-list-4.jpg" alt="img"/>
+                                                <span>세미 베버시티 고구마라떼 페이스트(스틱)80g 12개입/1팩</span>
+                                            </div>
+                                            <span class="item-price"><b>9,600원</b><span>1개</span></span>
+                                            <span class="item-status">입금대기중</span>
+                                            <button type="button" class="item-review">리뷰쓰기</button>
+                                        </div>
+                                    </div>
+                                    <div class="order-item business">
+                                        <div class="item-date" style="grid-row:span 2;">
+                                            <span>2021/11/08</span>
+                                            <a href="#;">1234567891013</a>
+                                            <button type="button">주문취소</button>
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                <input type="checkbox">
+                                                <img src="img/goods/goods-list-5.jpg" alt="img"/>
+                                                <span>기라델리 프리미엄 핫코코아 믹스 907g</span>
+                                            </div>
+                                            <span class="item-price"><b>15,900원</b><span>2개</span></span>
+                                            <span class="item-status">입금대기중</span>
+                                            <button type="button" class="item-review">리뷰쓰기</button>
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-name">
+                                                <input type="checkbox">
+                                                <img src="img/goods/goods-list-6.jpg" alt="img"/>
+                                                <span>세미 베버시티 녹차라떼 500g</span>
+                                            </div>
+                                            <span class="item-price"><b>6,800원</b><span>1개</span></span>
+                                            <span class="item-status">입금대기중</span>
+                                            <button type="button" class="item-review">리뷰쓰기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="pagination">
+                                <li class="active"><a href="#;">1</a></li>
+                                <li><a href="#;">2</a></li>
+                                <li><a href="#;">3</a></li>
+                            </ul>
+                            <button class="mobile-more-btn">더보기 +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- container - e -->
+    <footer id="footer"></footer>
+    <!-- footer - e -->
+
+
+    <!-- js -->
+    <script src="https://kit.fontawesome.com/3701dcbbf4.js" crossorigin="anonymous" ></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/mypage.js"></script>
+    
+</body>
+</html>

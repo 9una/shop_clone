@@ -1,0 +1,107 @@
+<div class="footer-contents">
+    <div class="footer__notice">
+        <div class="wrapper">
+            <div class="notice__notice">
+                <div class="notice-btn">
+                    <button type="button" class="active">공지사항 <i class="fas fa-angle-right"></i></button>
+                    <button type="button">당첨자 발표 <i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="notice-list">
+                    <ul class="active">
+                        <li><a href="#">2022년 2월 카드 무이자 안내</a></li>
+                        <li><a href="#">설연휴 배송일정안내</a></li>
+                        <li><a href="#">2022년 1월 카드 무이자 안내</a></li>
+                        <li><a href="#">신정(1월 1일) 택배없는날 배송휴무</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">[체험관] 225차 "아임요 리얼 고구마 페이스트 라떼</a></li>
+                        <li><a href="#">[체험관] 224차 "복음자리 그린티 민트 초코칩 파우더</a></li>
+                        <li><a href="#">[체험관] 223차 "복음자리 그린티 민트 초코칩 파우더</a></li>
+                        <li><a href="#">[체험관] 222차 "포모나 바닐라시럽 + 전용 펌프 증정</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="notice__cs">
+                <span><b>고객센터 상담시간</b></span>
+                <p>
+                    평일 오전 09:30 ~ 오후 17:30<br>
+                    점심시간 : 01:00 ~ 02:00<br>
+                    업무휴무 : 토 / 일 / 공휴일 휴무
+                </p>
+                <div class="cs-btn">
+                    <a href="phone-counseling.html">전화예약상담 <i class="fas fa-angle-right"></i></a>
+                    <a href="#">1:1 문의 <i class="fas fa-angle-right"></i></a>
+                </div>
+                <span>☎ 1234-5678</span>
+            </div>
+            <div class="notice__delivery">
+                <div>
+                    <span>기본배송</span>
+                    <b><i class="fas fa-truck"></i> CJ대한통운</b>
+                    <p>출고마감: 평일 오후 5시 / 토요일 오후 2시</p>
+                </div>
+                <div>
+                    <span>오늘 주문하고 오늘받자!</span>
+                    <b>사업자특송 번개배송</b>
+                    <p>출고마감: 월~토 오전 10시 30분</p>
+                </div>
+            </div>
+            <div class="notice__bank">
+                <span>입금계좌안내</span>
+                <p>
+                    <b>(주)세이지그린</b><br>
+                    농&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;협 : 367-07-048922<br>
+                    우리은행 : 850-149301-13-101<br>
+                    국민은행 : 816901-04-139520<br>
+                    하나은행 : 777-910013-89904<br>
+                    신한은행 : 140-008-288663<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer__nav">
+        <div class="wrapper">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#"><b>개인정보 처리방침</b></a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__info">
+        <div class="wrapper">
+            <p>
+                상호명 : (주)세이지그린 / 대표 : 김민기 / 전화 : 1234-1234 / 팩스 : 02-1234-5678<br>
+                주소 : 서울특별시 마포구 월드컵북로 402(KGIT센터) 20층 / 사업자등록번호 : 111-11-11111<br>
+            </p>
+            <div class="info__link">
+                <a href="#"></a>
+                <span></span>
+                <span></span>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    //footer notice
+    const footerNoticeTab = document.querySelectorAll('.notice-btn button');
+    const footerNoticeList = document.querySelectorAll('.notice-list ul');
+
+    for(let i = 0; i < footerNoticeTab.length; i++){
+        footerNoticeTab[i].addEventListener("click", ()=>{
+            let j = 0,
+                k = 0;
+            while(j < footerNoticeTab.length && k < footerNoticeTab.length){
+                footerNoticeTab[j++].classList.remove("active");
+                footerNoticeList[k++].classList.remove("active");
+            }
+            footerNoticeTab[i].classList.add("active");
+            footerNoticeList[i].classList.add("active");
+        });
+    }
+</script>

@@ -1,0 +1,335 @@
+.goods section .wrapper .goods__category {
+  display: grid;
+  background: #d8d6d6;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  border: 1px solid #d8d6d6;
+  margin-bottom: 20px;
+}
+.goods section .wrapper .goods__category a {
+  display: flex;
+  padding: 15px 20px;
+  background: white;
+}
+.goods section .wrapper .goods__category a:active {
+  background: #e9e9e9;
+}
+.goods section .wrapper .goods__filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.goods section .wrapper .goods__filter .filter__list {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.goods section .wrapper .goods__filter .filter__list .filter__title {
+  background: #e6e6e6;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.goods section .wrapper .goods__filter .filter__list .filter__title::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: black;
+  display: block;
+  margin-right: 5px;
+}
+.goods section .wrapper .goods__filter .filter__list .filter__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0 10px 20px;
+  gap: 2px 3px;
+}
+.goods section .wrapper .goods__filter .filter__list .filter__item button {
+  padding: 5px 10px;
+}
+.goods section .wrapper .goods__filter .filter__list .filter__item button.checked {
+  background: #e4130c;
+  border-radius: 20px;
+  color: white;
+}
+.goods section .wrapper .goods__filter .filter__list:not(:last-child) .filter__item {
+  border-bottom: 2px dotted #cfcfcf;
+}
+.goods section .wrapper .goods__filter#checked {
+  border: none;
+  display: none;
+}
+.goods section .wrapper .goods__filter#checked .filter__list {
+  padding-top: 15px;
+}
+.goods section .wrapper .goods__filter#checked .filter__list .filter__title {
+  background: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #cfcfcf;
+}
+.goods section .wrapper .goods__filter#checked .filter__list .filter__title::before {
+  display: none;
+}
+.goods section .wrapper .goods__filter#checked .filter__list .filter__title i {
+  padding: 0 10px;
+}
+.goods section .wrapper .goods__filter#checked .filter__list .filter__item {
+  padding: 0 0 0 20px;
+}
+.goods section .wrapper .goods__filter#checked .filter__list .filter__item button {
+  padding: 5px;
+  margin-right: 15px;
+}
+.goods section .wrapper .goods__filter#checked.on {
+  display: block;
+}
+.goods section .wrapper .goods__event-banner {
+  margin-top: 20px;
+  width: 100%;
+  background: cornflowerblue;
+  color: white;
+  font-weight: 100;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.goods section .wrapper .goods__event-banner ul {
+  display: flex;
+  width: 300%;
+  height: 250px;
+  transition: transform 0.3s;
+}
+.goods section .wrapper .goods__event-banner ul li a {
+  width: 100%;
+  height: 100%;
+}
+.goods section .wrapper .goods__event-banner button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3em;
+}
+.goods section .wrapper .goods__event-banner button.prev-btn {
+  left: 10px;
+}
+.goods section .wrapper .goods__event-banner button.next-btn {
+  right: 10px;
+}
+.goods section .wrapper .goods__list .list-pick {
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+.goods section .wrapper .goods__list .list-pick .pick-item {
+  border-top: 2px solid black;
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.goods section .wrapper .goods__list .list-pick .pick-item .pick-btn {
+  display: flex;
+}
+.goods section .wrapper .goods__list .list-pick .pick-item .pick-btn button {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.goods section .wrapper .goods__list .list-pick .pick-item .pick-btn button.active {
+  font-weight: bold;
+}
+.goods section .wrapper .goods__list .list-pick .pick-item .pick-btn button.active::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  display: block;
+  margin-right: 5px;
+}
+.goods section .wrapper .goods__list .list-pick .pick-item .view-item-num {
+  display: none;
+}
+.goods section .wrapper .goods__list .list-pick .pick-item select {
+  padding: 5px;
+}
+.goods section .wrapper .goods__list .list-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 10px 25px;
+}
+.goods section .wrapper .goods__list .list-box .list-item:last-child {
+  margin-bottom: 80px;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap {
+  position: relative;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .best-icon {
+  position: absolute;
+  top: -28px;
+  align-items: center;
+  font-weight: bold;
+  color: #e4130c;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .best-icon span {
+  padding: 1px 10px 3px;
+  background: #e4130c;
+  color: white;
+  margin-right: 6px;
+  border-radius: 5px 5px 0 0;
+  font-size: 1.25em;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .best-icon strong {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8em;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .goods__img {
+  border: 1px solid #d8d6d6;
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .goods__img img {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  position: absolute;
+  object-fit: cover;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .goods__text {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  letter-spacing: -0.03em;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .goods__text .goods-name {
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .goods__text .goods-price {
+  order: 1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+  color: #777;
+  font-size: 0.95em;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .goods__text .goods-price s {
+  margin-right: 3px;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .goods__text .goods-sale {
+  order: 3;
+  font-size: 0.95em;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap a .goods__text .goods-sale b {
+  font-size: 1.35em;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap .goods-cart {
+  order: 2;
+  grid-row: span 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 5px;
+  margin-top: 10px;
+  font-size: 1.6em;
+  cursor: pointer;
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  color: #555;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap .goods-cart:hover {
+  color: #e4130c;
+}
+.goods section .wrapper .goods__list .list-box .list-item .item-wrap .goods-cart.on {
+  color: #e4130c;
+}
+.goods section .wrapper .goods__list .list-box .list-item .goods__sale-text {
+  background: black;
+  margin-top: 15px;
+  padding: 5px 15px;
+  border-radius: 0 15px 15px 15px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.goods section .wrapper .goods__list .list-box .list-item .goods__sale-text.red {
+  background: none;
+  border-radius: 0;
+  flex-direction: column;
+  padding: 0;
+  font-size: 0.95em;
+  letter-spacing: 0;
+}
+.goods section .wrapper .goods__list .list-box .list-item .goods__sale-text.red p {
+  padding: 2px 5px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2px;
+  background: #e4130c;
+  color: white;
+}
+.goods section .wrapper .goods__list .list-box .list-item .goods__sale-text .event-text {
+  color: yellow;
+  letter-spacing: 1px;
+}
+.goods section .wrapper .goods__list .list-box .list-item .goods__sale-text .event-price {
+  color: red;
+}
+.goods section .wrapper .goods__list .list-box .list-item .goods__sale-text .event-price b {
+  font-size: 1.4em;
+}
+.goods section .wrapper .goods__list .list-box .list-item.best-item .item-wrap a .best-icon {
+  display: flex;
+}
+.goods section .wrapper .goods__list .list-box .list-item.sale-event .goods__sale-text {
+  display: flex;
+}
+.goods section .wrapper .goods__list .list-pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.goods section .wrapper .goods__list .list-pagination .pagination__num {
+  display: flex;
+}
+.goods section .wrapper .goods__list .list-pagination .pagination__num li a {
+  width: 30px;
+}
+.goods section .wrapper .goods__list .list-pagination .pagination__num li a:hover {
+  background: #cfcfcf;
+}
+.goods section .wrapper .goods__list .list-pagination .pagination__num li.active a {
+  background: #e9e9e9;
+}
+.goods section .wrapper .goods__list .list-pagination .pagination__next,
+.goods section .wrapper .goods__list .list-pagination .pagination__last {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.goods section .wrapper .goods__list .list-pagination .pagination__next i,
+.goods section .wrapper .goods__list .list-pagination .pagination__last i {
+  color: #999;
+}
+.goods section .wrapper .goods__list .list-pagination .pagination__next:hover,
+.goods section .wrapper .goods__list .list-pagination .pagination__last:hover {
+  background: #cfcfcf;
+}
+.goods section .wrapper .goods__list .list-pagination .pagination__num li a,
+.goods section .wrapper .goods__list .list-pagination .pagination__next,
+.goods section .wrapper .goods__list .list-pagination .pagination__last {
+  margin-right: 5px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #d8d6d6;
+}
+.goods section .wrapper .goods__list .list-box-more {
+  display: none;
+}

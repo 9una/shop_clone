@@ -1,0 +1,355 @@
+#container section {
+  padding-bottom: 50px;
+  position: relative;
+}
+#container .section__title {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 100px auto 50px;
+  word-break: keep-all;
+}
+
+.main .hero-banner {
+  height: 550px;
+  padding-bottom: 0 !important;
+  width: 100%;
+}
+.main .hero-banner .slide-banner {
+  width: 100%;
+  overflow: hidden;
+}
+.main .hero-banner .slide-banner .slide-list {
+  width: 300vw;
+  display: flex;
+  transition: transform 0.3s;
+}
+.main .hero-banner .slide-banner .slide-list .slide-item {
+  display: flex;
+  width: 100%;
+  height: 550px;
+}
+.main .hero-banner .slide-banner .slide-list .slide-item a {
+  width: 100%;
+  height: 100%;
+}
+.main .hero-banner .slide-banner .slide-list .slide-item.event1 a {
+  background: url(../../img/banner/main-slide-1.jpg) no-repeat center;
+  background-size: cover;
+}
+.main .hero-banner .slide-banner .slide-list .slide-item.event2 a {
+  background: url(../../img/banner/main-slide-2.jpg) no-repeat center;
+  background-size: cover;
+}
+.main .hero-banner .slide-banner .slide-list .slide-item.event3 a {
+  background: url(../../img/banner/main-slide-3.jpg) no-repeat center;
+  background-size: cover;
+}
+.main .hero-banner .pagination {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translatex(-50%);
+  display: flex;
+  gap: 7px;
+}
+.main .hero-banner .pagination .dot button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #e9e9e9;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.main .hero-banner .pagination .dot.dot_active button {
+  background: #222;
+}
+.main .hero-banner > button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4em;
+}
+.main .hero-banner > button.prev-btn {
+  left: 30px;
+}
+.main .hero-banner > button.next-btn {
+  right: 30px;
+}
+.main .event-banner .more-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.main .event-banner .main-event {
+  position: relative;
+}
+.main .event-banner .main-event .event-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 357px);
+  justify-content: space-between;
+  gap: 15px;
+}
+.main .event-banner .main-event .event-wrap div a {
+  height: 275px;
+}
+.main .event-banner .main-event .event-wrap div:nth-child(1) a {
+  background: url(../../img/banner/event-1.jpg);
+}
+.main .event-banner .main-event .event-wrap div:nth-child(2) a {
+  background: url(../../img/banner/event-2.jpg);
+}
+.main .event-banner .main-event .event-wrap div:nth-child(3) a {
+  background: url(../../img/banner/event-3.jpg);
+}
+.main .event-banner .main-event .event-wrap div:nth-child(4) a {
+  background: url(../../img/banner/event-4.jpg);
+}
+.main .event-banner .main-event .event-wrap div:nth-child(5) a {
+  background: url(../../img/banner/event-5.jpg);
+}
+.main .event-banner .main-event .event-wrap div:nth-child(6) a {
+  background: url(../../img/banner/event-6.jpg);
+}
+.main .event-banner .main-event .event-wrap div:nth-child(7) a {
+  background: url(../../img/banner/event-7.jpg);
+}
+.main .event-banner .main-event .event-wrap div:nth-child(8) a {
+  background: url(../../img/banner/event-8.jpg);
+}
+.main .event-banner .main-event .event-wrap div:nth-child(9) a {
+  background: url(../../img/banner/event-9.jpg);
+}
+.main .event-banner .experience-event {
+  margin: 30px 0 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 541px);
+  justify-content: space-between;
+}
+.main .event-banner .experience-event div a {
+  height: 132px;
+}
+.main .event-banner .experience-event div:nth-child(1) a {
+  background: url(../../img/banner/experience-1.jpg);
+}
+.main .event-banner .experience-event div:nth-child(2) a {
+  background: url(../../img/banner/experience-2.jpg);
+}
+.main .collection-banner {
+  background: #e0e0e0;
+  padding-bottom: 0 !important;
+}
+.main .collection-banner .wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 50px 0 55px;
+}
+.main .collection-banner .wrapper p {
+  margin: 30px 0;
+  font-size: 1.6em;
+  line-height: 1.5;
+  letter-spacing: -0.06em;
+}
+.main .collection-banner .wrapper p strong {
+  font-size: 1.6em;
+  display: block;
+}
+.main .collection-banner .wrapper .collection-item a {
+  height: 260px;
+}
+.main .collection-banner .wrapper .collection-item:nth-child(2) a {
+  background: url(../../img/banner/collection-1.jpg) no-repeat center;
+}
+.main .collection-banner .wrapper .collection-item:nth-child(3) a {
+  background: url(../../img/banner/collection-2.jpg) no-repeat center;
+}
+.main .collection-banner .wrapper .collection-item:nth-child(4) a {
+  background: url(../../img/banner/collection-3.jpg) no-repeat center;
+}
+.main .collection-banner .wrapper .collection-item:nth-child(5) a {
+  background: url(../../img/banner/collection-4.jpg) no-repeat center;
+}
+.main .main-product .products {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 25px;
+}
+.main .main-product .products .item.banner__center {
+  font-family: "Lato", sans-serif;
+  grid-column: span 2;
+  background: #088695;
+  padding: 30px;
+  color: white;
+  font-size: 2.6em;
+  line-height: 1.2;
+  font-weight: thin;
+}
+.main .main-product .products .item.banner__center b {
+  font-size: 1.2em;
+}
+.main .main-product .products .item .product__img {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  border: 1px solid #d8d6d6;
+}
+.main .main-product .products .item .product__img img {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  position: absolute;
+  object-fit: cover;
+}
+.main .main-product .products .item .product__name {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.main .main-product .products .item .product__price {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.main .main-product .products .item .product__price b {
+  font-size: 1.25em;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+.main .best-product article {
+  border-top: 2px solid black;
+  border-bottom: 1px solid #d8d6d6;
+  display: grid;
+  height: 629px;
+  grid-template-columns: 220px 300px auto;
+  margin-bottom: 70px;
+}
+.main .best-product article.takeout {
+  border-top-color: #0459ce;
+}
+.main .best-product article.takeout .best__title {
+  color: #0459ce;
+}
+.main .best-product article.coffee {
+  border-top-color: #5b230c;
+}
+.main .best-product article.coffee .best__title {
+  color: #5b230c;
+}
+.main .best-product article > div {
+  padding: 20px;
+}
+.main .best-product article .best__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.main .best-product article .best__text .best__title {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: -1.5px;
+  margin-top: 10px;
+}
+.main .best-product article .best__text .best__title span {
+  font-size: 0.45em;
+  letter-spacing: 0;
+  display: block;
+  margin-top: 10px;
+  font-weight: normal;
+}
+.main .best-product article .best__text .hashtag-item a {
+  padding: 5px 0;
+}
+.main .best-product article .best__banner {
+  padding: 0;
+}
+.main .best-product article .best__banner p {
+  font-size: 1.8em;
+  font-weight: 100;
+  margin: 5px 0 20px;
+}
+.main .best-product article .best__banner h4 {
+  font-size: 2em;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+.main .best-product article .best__list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 25px 15px;
+}
+.main .best-product article .best__list ul li a .product__img {
+  width: 170px;
+  padding-bottom: 170px;
+  position: relative;
+  margin-bottom: 15px;
+  border: 1px solid #d8d6d6;
+}
+.main .best-product article .best__list ul li a .product__img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.main .best-product article .best__list ul li a .product__name {
+  margin-bottom: 5px;
+  line-height: 1.4;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.main .best-product article .best__list ul li a span {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.main .best-product article .best__list ul li a span b {
+  font-size: 1.25em;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.quick-banner {
+  width: 150px;
+  position: fixed;
+  padding: 0 12px 15px;
+  left: 50%;
+  transform: translateX(600px);
+  background: white;
+  border: 1px solid #d8d6d6;
+  transition: top 0.3s;
+}
+.quick-banner h5 {
+  display: block;
+  background: black;
+  color: white;
+  width: 90%;
+  font-weight: normal;
+  padding: 8px 0;
+  text-align: center;
+  letter-spacing: 0;
+  font-size: 1em;
+  border-radius: 30px;
+  margin: 15px auto 10px;
+}
+.quick-banner .quick-customer span,
+.quick-banner .quick-customer a {
+  border-bottom: 1px solid #d8d6d6;
+  display: block;
+  padding: 13px 0;
+  text-align: center;
+}
+.quick-banner .quick-customer span i,
+.quick-banner .quick-customer a i {
+  margin-right: 8px;
+}
+.quick-banner .quick-customer span:nth-child(2),
+.quick-banner .quick-customer a:nth-child(2) {
+  padding-top: 5px;
+}
+.quick-banner .quick-benefit .banner-img {
+  width: 128px;
+  height: 121px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

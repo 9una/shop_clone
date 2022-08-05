@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/reset.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <title>FAQ</title>
+</head>
+<body>
+    <header id="header"></header>
+    <!-- header - e -->
+    <div id="container" class="mypage faq">
+        <div class="location">
+            <div class="wrapper">
+                <a href="index.html" class="location-link">HOME</a>
+                <a href="faq.html" class="location-link">FAQ</a>
+            </div>
+        </div>
+        <section class="side-nav-cont">
+            <div class="wrapper">
+                <div class="side-nav cs-nav">
+                    <ul>
+                        <li>
+                            <span>고객센터</span>
+                            <a href="#;">1:1 문의하기</a>
+                            <a href="phone-counseling.html">전화상담예약</a>
+                            <a href="#;">공지사항</a>
+                            <a href="faq.html" class="active">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="cs-service">
+                        <span>고객상담센터</span>
+                        <p>
+                            <b>1234-5678</b><br>
+                            cs@address.co.kr<br>
+                            상담시간 : AM 09:00~PM 18:00<br>
+                            점심시간 : PM 13:00~PM 14:00<br>
+                            휴뮤 : 토/일요일, 공휴일
+                        </p>
+                    </div>
+                    <div class="bank-account">
+                        <span>은행계좌 안내</span>
+                        <p>
+                            <b>777-910013-89904</b><br>
+                            하나은행<br>
+                            [예금주 : (주)세이지그린]
+                        </p>
+                    </div>
+                </div>
+                <!-- side navigation - e -->
+                <div class="content">
+                    <div class="faq__info">
+                        <div class="often-faq">
+                            <form>
+                                <h4 class="faq-title">자주묻는 질문 검색</h4>
+                                <input type="text" required placeholder="검색어를 입력하세요">
+                                <button type="submit">검색 <i class="fas fa-search"></i></button>
+                            </form>
+                            <div>
+                                <span>찾으시는 질문이 없다면?</span>
+                                <button>1:1 문의하기</button>
+                            </div>
+                        </div>
+                        <div class="faq-list">
+                            <h4 class="faq-title">FAQ</h4>
+                            <div class="faq-tag">
+                                <button class="active">전체</button>
+                                <button>배송관련</button>
+                                <button>쿠폰 및 적립금</button>
+                                <button>포인트</button>
+                                <button>세금계산/증빙서류</button>
+                                <button>회원가입/로그인</button>
+                                <button>취소/반품/환불/교환</button>
+                                <button>기타</button>
+                            </div>
+                            <select class="mobile-faq-select">
+                                <option>전체</option>
+                                <option>배송관련</option>
+                                <option>쿠폰 및 적립금</option>
+                                <option>포인트</option>
+                                <option>세금계산/증빙서류</option>
+                                <option>회원가입/로그인</option>
+                                <option>취소/반품/환불/교환</option>
+                                <option>기타</option>
+                            </select>
+                            <table class="faq-table">
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>분류</th>
+                                        <th>내용</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="faq-q">
+                                        <td>2</td>
+                                        <td>배송관련</td>
+                                        <td class="q-title">토요일과 일요일/공휴일 배송은 어떻게 되나요?</td>
+                                    </tr>
+                                    <tr class="faq-a">
+                                        <td colspan="3">
+                                            <span class="q"></span>
+                                            <p class="a">
+                                                토요일(오후 2시 이전) 결제건에 대해서<br>
+                                                <i class="fas fa-caret-right fa-lg"></i> "당일출고" 됩니다.<br><br>
+                                                일요일과 공휴일의 경우 배송업체(CJ대한통운)의 업무 휴무 관계로 출고 및 배송업무가 이루어지지 않습니다.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr class="faq-q">
+                                        <td>1</td>
+                                        <td>배송관련</td>
+                                        <td class="q-title">배송시간을 지정할 수 있나요?</td>
+                                    </tr>
+                                    <tr class="faq-a">
+                                        <td colspan="3">
+                                            <span class="q"></span>
+                                            <p class="a">
+                                                상품 배송 시간은 당일 물량에 따라 택배사가 새벽에 배송일정을 계획하기 때문에 미리 시간을 정하기는 어렵습니다. 이 점 양해해 주시면 감사하겠습니다.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="pagination">
+                                <li class="active"><a href="#;">1</a></li>
+                                <li><a href="#;">2</a></li>
+                                <li><a href="#;">3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- container - e -->
+    <footer id="footer"></footer>
+    <!-- footer - e -->
+
+
+    <!-- js -->
+    <script src="https://kit.fontawesome.com/3701dcbbf4.js" crossorigin="anonymous" ></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/faq.js"></script>
+    
+</body>
+</html>

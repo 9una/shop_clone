@@ -1,0 +1,82 @@
+#brand-menu {
+  width: 994px;
+  height: 550px;
+  position: absolute;
+  top: 65px;
+  left: -197px;
+  background-color: white;
+  border: 1px solid black;
+  color: black !important;
+  z-index: 1;
+}
+#brand-menu::before {
+  content: "";
+  width: 60px;
+  height: 8px;
+  background: url(../../img/bubble_cate.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 200px;
+  top: -8px;
+}
+#brand-menu .wrap {
+  padding: 20px 0 30px;
+}
+#brand-menu .wrap > div {
+  width: 100%;
+}
+#brand-menu .wrap .tab {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+#brand-menu .wrap .tab a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.8;
+  font-weight: normal;
+  background: #bbb;
+  color: white;
+}
+#brand-menu .wrap .tab a:hover {
+  background: #e4130c;
+}
+#brand-menu .wrap .tab a:last-child {
+  width: 60px;
+}
+#brand-menu .wrap .cont {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 478px;
+  overflow: auto;
+  padding: 0 30px;
+}
+#brand-menu .wrap .cont .row {
+  padding-bottom: 20px;
+}
+#brand-menu .wrap .cont .row h3 {
+  font-size: 2.2em;
+}
+#brand-menu .wrap .cont .row div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+#brand-menu .wrap .cont .row div a {
+  font-weight: normal;
+  padding: 10px;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+#brand-menu .wrap .cont .row div a:hover {
+  color: #e4130c;
+  font-weight: bold;
+}
+#brand-menu .wrap .cont .row:last-child {
+  padding-bottom: 30px;
+}

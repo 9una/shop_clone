@@ -1,0 +1,284 @@
+.login section .section-title,
+.join section .section-title {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 2.2em;
+}
+
+.login section .login-box {
+  width: 54%;
+  margin: auto;
+  border: 1px solid #d8d6d6;
+  padding: 45px 60px 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.login section .login-box .login-form form {
+  display: grid;
+  grid-template-columns: 3fr 1.6fr;
+  gap: 10px 15px;
+}
+.login section .login-box .login-form form .text-box input {
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid #d8d6d6;
+}
+.login section .login-box .login-form form .text-box input:first-child {
+  margin-bottom: 10px;
+}
+.login section .login-box .login-form form button {
+  background: #e4130c;
+  color: white;
+  font-weight: bold;
+}
+.login section .login-box .login-form form button:hover {
+  background: #d3100a;
+}
+.login section .login-box .login-form form .check-box {
+  display: flex;
+  align-items: center;
+}
+.login section .login-box .login-form form .check-box input {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.login section .login-box .login-form form .check-box label {
+  margin-right: 15px;
+}
+.login section .login-box .login-form form a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: #0479c9;
+  letter-spacing: 0.5px;
+  font-size: 0.9em;
+}
+.login section .login-box .sns-login {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d8d6d6;
+}
+.login section .login-box .sns-login button {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8d6d6;
+}
+.login section .login-box .sns-login button:last-child {
+  border-bottom: 0;
+}
+.login section .login-box .sns-login button i {
+  border-right: 1px solid #d8d6d6;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login section .login-box .sns-login button:nth-child(1) i {
+  font-size: 2em;
+  color: #1ec900;
+}
+.login section .login-box .sns-login button:nth-child(2) i {
+  font-size: 1.4em;
+  color: #492116;
+}
+.login section .login-box .sns-login button:nth-child(3) i {
+  font-size: 1.6em;
+  color: #385995;
+}
+.login section .login-box .sns-login button:nth-child(4) i {
+  font-size: 1.8em;
+  color: #333;
+}
+.login section .login-box .sns-login button span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #aaa;
+}
+.login section .login-box .non-member {
+  border-top: 2px dotted #d8d6d6;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+.login section .login-box .non-member form {
+  display: flex;
+  flex-direction: column;
+}
+.login section .login-box .non-member form > div:first-child {
+  display: flex;
+  align-items: center;
+  font-size: 0.95em;
+}
+.login section .login-box .non-member form > div:first-child p {
+  margin-right: 10px;
+}
+.login section .login-box .non-member form > div:first-child input[type=checkbox] {
+  margin-left: 8px;
+  width: 18px;
+  height: 18px;
+}
+.login section .login-box .non-member form .order-box {
+  padding-top: 20px;
+  display: none;
+  grid-template-columns: 3fr 1.6fr;
+  gap: 15px;
+}
+.login section .login-box .non-member form .order-box.active {
+  display: grid;
+}
+.login section .login-box .non-member form .order-box .text-box input {
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid #d8d6d6;
+}
+.login section .login-box .non-member form .order-box .text-box input:first-child {
+  margin-bottom: 10px;
+}
+.login section .login-box .non-member form .order-box button {
+  border: 1px solid #e4130c;
+  padding: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #e4130c;
+}
+.login section .login-box .non-member form .order-box p {
+  grid-column: span 2;
+}
+.login section .join-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.login section .join-text a {
+  margin-left: 5px;
+  display: inline;
+  color: #0479c9;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.join section .join-box {
+  width: 54%;
+  margin: 0 auto 50px;
+}
+.join section .join-box .join-type {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+.join section .join-box .join-type form {
+  text-align: center;
+  font-size: 1.2em;
+}
+.join section .join-box .join-type form input {
+  margin-right: 0;
+}
+.join section .join-box .join-type form label:nth-child(2) {
+  margin-right: 60px;
+}
+.join section .join-box .join-type form input:checked + label {
+  color: red;
+}
+.join section .join-box .join-form {
+  margin-top: 30px;
+}
+.join section .join-box .join-form > div {
+  display: none;
+}
+.join section .join-box .join-form > div form .info-required {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+.join section .join-box .join-form > div form .info-required input,
+.join section .join-box .join-form > div form .info-required button {
+  padding: 15px;
+  border: 1px solid #d8d6d6;
+}
+.join section .join-box .join-form > div form .info-required label {
+  margin: 5px 5px 10px;
+  color: cornflowerblue;
+}
+.join section .join-box .join-form > div form .info-required .password-text {
+  display: none;
+  margin: 2px 5px 8px;
+}
+.join section .join-box .join-form > div form .info-required .password-text.wrong {
+  color: #e4130c;
+}
+.join section .join-box .join-form > div form .info-required .password-text.right {
+  color: blue;
+}
+.join section .join-box .join-form > div form .info-required .row-cont {
+  grid-column: span 2;
+}
+.join section .join-box .join-form > div form .info-required input[type=number]::-webkit-outer-spin-button,
+.join section .join-box .join-form > div form .info-required input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.join section .join-box .join-form > div form .for-business {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.join section .join-box .join-form > div form .for-business p {
+  text-align: center;
+  margin: 40px 0 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+}
+.join section .join-box .join-form > div form .for-business p::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: #e4130c;
+  margin-right: 5px;
+}
+.join section .join-box .join-form > div form .for-business div {
+  display: flex;
+  justify-content: space-around;
+}
+.join section .join-box .join-form > div form .for-business div span {
+  display: flex;
+  align-items: center;
+}
+.join section .join-box .join-form > div form .for-business div span input {
+  margin-right: 5px;
+}
+.join section .join-box .join-form > div.active {
+  display: block;
+}
+.join section .join-box .join-btn {
+  width: 100%;
+  padding: 25px 0;
+  background: #e4130c;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 1.8em;
+}
+.join section .join-box .join-btn:disabled {
+  background: #bdbdbd;
+}
+.join section .join-box .join-text {
+  color: #888;
+  line-height: 1.4;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+.join section .join-box .join-text a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: underline;
+  font-weight: normal;
+}

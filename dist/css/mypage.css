@@ -1,0 +1,927 @@
+@charset "UTF-8";
+.mypage .side-nav-cont .wrapper {
+  display: flex;
+}
+.mypage .side-nav-cont .wrapper .side-nav {
+  width: 175px;
+  height: 100%;
+  padding: 0 0 20px 17px;
+  margin-top: 5px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.mypage .side-nav-cont .wrapper .side-nav ul li span {
+  padding-top: 25px;
+  display: block;
+  font-weight: bold;
+  font-size: 1.15em;
+  margin-bottom: 15px;
+  position: relative;
+}
+.mypage .side-nav-cont .wrapper .side-nav ul li span::before {
+  position: absolute;
+  left: -15px;
+  content: "\f0d7";
+  font-family: FontAwesome;
+  color: orangered;
+}
+.mypage .side-nav-cont .wrapper .side-nav ul li a {
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  color: #555;
+}
+.mypage .side-nav-cont .wrapper .side-nav ul li a.active, .mypage .side-nav-cont .wrapper .side-nav ul li a:hover {
+  color: #e4130c;
+}
+.mypage .side-nav-cont .wrapper .cs-nav {
+  padding: 0;
+  border: none;
+}
+.mypage .side-nav-cont .wrapper .cs-nav li {
+  margin-bottom: 120px;
+}
+.mypage .side-nav-cont .wrapper .cs-nav li span {
+  padding: 0 0 20px 10px;
+  border-bottom: 1px solid #e9e9e9;
+  font-size: 1.5em !important;
+}
+.mypage .side-nav-cont .wrapper .cs-nav li span::before {
+  display: none;
+}
+.mypage .side-nav-cont .wrapper .cs-nav li a {
+  padding-left: 10px;
+  margin-bottom: 15px !important;
+  font-size: 1.1em !important;
+}
+.mypage .side-nav-cont .wrapper .cs-nav .cs-service,
+.mypage .side-nav-cont .wrapper .cs-nav .bank-account {
+  padding: 0 0 20px 10px;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  color: #222;
+}
+.mypage .side-nav-cont .wrapper .cs-nav .cs-service span,
+.mypage .side-nav-cont .wrapper .cs-nav .bank-account span {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.mypage .side-nav-cont .wrapper .cs-nav .cs-service span::before,
+.mypage .side-nav-cont .wrapper .cs-nav .bank-account span::before {
+  content: "";
+  display: block;
+  width: 25px;
+  margin-bottom: 15px;
+  height: 1px;
+  background: #777;
+}
+.mypage .side-nav-cont .wrapper .cs-nav .cs-service p,
+.mypage .side-nav-cont .wrapper .cs-nav .bank-account p {
+  font-size: 0.95em;
+  margin-top: 10px;
+  color: #666;
+  line-height: 1.5;
+}
+.mypage .side-nav-cont .wrapper .cs-nav .cs-service p b,
+.mypage .side-nav-cont .wrapper .cs-nav .bank-account p b {
+  display: block;
+  font-size: 1.15em;
+  color: #222;
+}
+.mypage .side-nav-cont .wrapper .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 90px;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.mypage .side-nav-cont .wrapper .content .faq-title,
+.mypage .side-nav-cont .wrapper .content .step-title,
+.mypage .side-nav-cont .wrapper .content .form-title,
+.mypage .side-nav-cont .wrapper .content .title-info {
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+.mypage .side-nav-cont .wrapper .content .pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 20px;
+}
+.mypage .side-nav-cont .wrapper .content .pagination li {
+  margin: 0 3px;
+}
+.mypage .side-nav-cont .wrapper .content .pagination li a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #cfcfcf;
+  color: #888;
+}
+.mypage .side-nav-cont .wrapper .content .pagination li a:hover {
+  background: #e2e2e2;
+  color: #666;
+}
+.mypage .side-nav-cont .wrapper .content .pagination li.active a {
+  background: #c0c0c0;
+  color: white;
+}
+.mypage .side-nav-cont .wrapper .content .mobile-more-btn {
+  display: none;
+}
+
+.order-list .content {
+  /* 주문/배송 - s */
+}
+.order-list .content .user__info {
+  border: 2px solid #dadada;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+}
+.order-list .content .user__info li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0 30px;
+}
+.order-list .content .user__info li span {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  background: #f7f9f8;
+  margin-bottom: 15px;
+  font-size: 2.6em;
+}
+.order-list .content .user__info li p {
+  font-size: 0.95em;
+}
+.order-list .content .user__info li p b {
+  display: block;
+  color: #333;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+.order-list .content .user__info li p strong {
+  font-family: "roboto";
+  letter-spacing: -0.03em;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-right: 3px;
+}
+.order-list .content .user__info li:first-child {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f7f9f8;
+}
+.order-list .content .user__info li:first-child img {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 20px;
+}
+.order-list .content .user__info li:nth-child(3), .order-list .content .user__info li:last-child {
+  border-left: 1px solid #cfcfcf;
+}
+.order-list .content .delivery__info {
+  margin-top: 40px;
+}
+.order-list .content .delivery__info .title {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+.order-list .content .delivery__info .history {
+  padding: 20px 25px;
+  border: 3px solid #e9e9e9;
+  display: flex;
+  align-items: center;
+}
+.order-list .content .delivery__info .history span {
+  color: #888;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.order-list .content .delivery__info .history form {
+  display: flex;
+  align-items: center;
+}
+.order-list .content .delivery__info .history form .history-btn {
+  border: 1px solid #cfcfcf;
+  background: #cfcfcf;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1px;
+  margin-right: 15px;
+}
+.order-list .content .delivery__info .history form .history-btn button {
+  background: white;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  color: #777;
+}
+.order-list .content .delivery__info .history form .history-btn button.active, .order-list .content .delivery__info .history form .history-btn button:hover {
+  background: #bbbbbb;
+  color: white;
+}
+.order-list .content .delivery__info .history form .anniversary {
+  margin: 0 2px;
+  height: 29px;
+  width: 120px;
+  border: 1px solid #dbdbdb;
+  padding: 0 10px;
+  background: url(../../img/calendar_icon.png) no-repeat 94% 3px;
+  background-size: 19px;
+  font-size: 0.95em;
+}
+.order-list .content .delivery__info .history form > button {
+  width: 110px;
+  margin-left: 10px;
+  background: #e4130c;
+  color: white;
+  padding: 5px 10px;
+}
+.order-list .content .delivery__info .history form > button i {
+  font-size: 0.95em;
+  margin-left: 2px;
+}
+.order-list .content .delivery__info .mobile-history {
+  display: none;
+}
+.order-list .content .delivery__info .details .details-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+.order-list .content .delivery__info .details .details-title span {
+  color: #e4130c;
+}
+.order-list .content .delivery__info .details .order-form {
+  font-size: 0.95em;
+  width: 100%;
+}
+.order-list .content .delivery__info .details .order-form .form-header {
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 125px 3fr 125px 125px 125px;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #dbdbdb;
+  text-align: center;
+  background: #f7f7f7;
+  font-weight: bold;
+}
+.order-list .content .delivery__info .details .order-form .form-body {
+  display: flex;
+  flex-direction: column;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item {
+  display: grid;
+  grid-template-columns: 125px auto;
+  border-bottom: 1px solid #dbdbdb;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #dbdbdb;
+  font-size: 0.95em;
+  padding: 18px 0;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-date a {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  text-decoration: underline;
+  color: #329cff;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 3px 0 5px;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-date button {
+  font-size: 0.95em;
+  padding: 5px 10px;
+  border: 1px solid #dbdbdb;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item #checkAll {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 10px 3px 15px;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item #checkAll input {
+  margin-right: 5px;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item #checkAll span {
+  font-size: 0.95em;
+  color: #666;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-info {
+  display: grid;
+  grid-template-columns: 3fr 125px 125px 125px;
+  padding: 10px 0;
+  align-items: center;
+  text-align: center;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-info:not(:last-child) {
+  border-bottom: 1px solid #dbdbdb;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-info .item-name {
+  text-align: left;
+  padding-left: 23px;
+  display: flex;
+  align-items: center;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-info .item-name img {
+  margin: 0 10px;
+  border: 1px solid #dbdbdb;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-info .item-price {
+  color: #555;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-info .item-price b {
+  color: #e4130c;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-info .item-price span::before {
+  content: "/";
+  margin: 0 5px;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-info .item-status {
+  color: #555;
+}
+.order-list .content .delivery__info .details .order-form .form-body .order-item .item-info .item-review {
+  font-weight: bold;
+  font-size: 0.95em;
+  background: #e4130c;
+  color: white;
+  margin: auto;
+  padding: 3px 13px 5px;
+}
+
+.faq .content .faq__info .often-faq {
+  padding: 25px 35px;
+  border: 3px solid #e9e9e9;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.faq .content .faq__info .often-faq form {
+  width: 65%;
+  padding-right: 50px;
+  border-right: 1px solid #cfcfcf;
+}
+.faq .content .faq__info .often-faq form input {
+  width: 78%;
+  height: 31px;
+  padding: 5px 10px;
+  border: 1px solid #cfcfcf;
+}
+.faq .content .faq__info .often-faq form button {
+  float: right;
+  width: 20%;
+  height: 30px;
+  background: #e4130c;
+  color: white;
+}
+.faq .content .faq__info .often-faq > div {
+  width: 35%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.faq .content .faq__info .often-faq > div span {
+  font-weight: bold;
+  color: #444;
+}
+.faq .content .faq__info .often-faq > div button {
+  width: 90px;
+  height: 28px;
+  margin-top: 17px;
+  border: 1px solid #cfcfcf;
+}
+.faq .content .faq__info .faq-list .faq-tag {
+  border-top: 2px solid #cfcfcf;
+  padding: 10px 0 20px;
+}
+.faq .content .faq__info .faq-list .faq-tag button {
+  font-size: 0.95em;
+  color: #555;
+}
+.faq .content .faq__info .faq-list .faq-tag button.active {
+  color: #e4130c;
+  font-weight: bold;
+}
+.faq .content .faq__info .faq-list .faq-tag button:hover {
+  color: #e4130c;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.faq .content .faq__info .faq-list .faq-tag button:not(:last-child)::after {
+  display: block;
+  float: right;
+  margin: 4px 8px 0 10px;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background: #cfcfcf;
+}
+.faq .content .faq__info .faq-list .mobile-faq-select {
+  display: none;
+}
+.faq .content .faq__info .faq-list .faq-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.faq .content .faq__info .faq-list .faq-table thead {
+  background: #f8f8f8;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+.faq .content .faq__info .faq-list .faq-table tr {
+  text-align: center;
+}
+.faq .content .faq__info .faq-list .faq-table tr th {
+  padding: 15px 0;
+}
+.faq .content .faq__info .faq-list .faq-table tr th:nth-child(1) {
+  width: 8%;
+}
+.faq .content .faq__info .faq-list .faq-table tr th:nth-child(2) {
+  width: 17%;
+}
+.faq .content .faq__info .faq-list .faq-table tr th:nth-child(3) {
+  width: 75%;
+}
+.faq .content .faq__info .faq-list .faq-table tr td {
+  padding: 15px 0;
+  border-bottom: 1px solid #cfcfcf;
+}
+.faq .content .faq__info .faq-list .faq-table tr td:last-child {
+  text-align: left;
+}
+.faq .content .faq__info .faq-list .faq-table tr td:last-child::before {
+  content: "Q";
+  margin-right: 8px;
+  font-weight: bold;
+  font-family: "Font Awesome 5 Pro";
+}
+.faq .content .faq__info .faq-list .faq-table .faq-q .q-title {
+  cursor: pointer;
+}
+.faq .content .faq__info .faq-list .faq-table .faq-q .q-title:hover {
+  text-decoration: underline;
+}
+.faq .content .faq__info .faq-list .faq-table .faq-a {
+  display: none;
+  color: #444;
+}
+.faq .content .faq__info .faq-list .faq-table .faq-a.active {
+  display: table-row;
+}
+.faq .content .faq__info .faq-list .faq-table .faq-a td:last-child {
+  background: #f7f7f7;
+  padding: 35px 15% 40px 25%;
+}
+.faq .content .faq__info .faq-list .faq-table .faq-a td:last-child::before {
+  display: none;
+}
+.faq .content .faq__info .faq-list .faq-table .faq-a td:last-child .q {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #222;
+}
+.faq .content .faq__info .faq-list .faq-table .faq-a td:last-child .q::before {
+  content: "Q";
+  margin-right: 8px;
+  font-weight: bold;
+  font-family: "Font Awesome 5 Pro";
+}
+.faq .content .faq__info .faq-list .faq-table .faq-a td:last-child .a {
+  margin-left: 20px;
+  word-break: keep-all;
+  line-height: 1.5;
+  position: relative;
+}
+.faq .content .faq__info .faq-list .faq-table .faq-a td:last-child .a::before {
+  content: "A";
+  font-weight: bold;
+  font-family: "Font Awesome 5 Pro";
+  color: #e4130c;
+  position: absolute;
+  left: -19px;
+  top: -3px;
+}
+
+.phone-reservation .content {
+  /* 전화상담예약 - s */
+}
+.phone-reservation .content .reservation__title {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 20px;
+}
+.phone-reservation .content .reservation__title h3 {
+  font-size: 2em;
+  color: #333333;
+}
+.phone-reservation .content .reservation__title a {
+  background: #979797;
+  color: white;
+  width: 120px;
+  height: 30px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone-reservation .content .reservation__content {
+  position: relative;
+}
+.phone-reservation .content .reservation__content .reservation {
+  width: 100%;
+}
+.phone-reservation .content .reservation__content .reservation h4,
+.phone-reservation .content .reservation__content .reservation .form-content {
+  padding: 0 30px;
+}
+.phone-reservation .content .reservation__content .reservation .wrap {
+  border: 1px solid #cfcfcf;
+  padding: 30px 50px;
+}
+.phone-reservation .content .reservation__content .step1 .title-info {
+  grid-column: span 2;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 1.3em;
+}
+.phone-reservation .content .reservation__content .step1 .title-info span {
+  color: #e4130c;
+}
+.phone-reservation .content .reservation__content .step1 .vip-banner {
+  display: flex;
+  position: relative;
+  margin-bottom: 60px;
+}
+.phone-reservation .content .reservation__content .step1 .vip-banner p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  background: black;
+  color: gold;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+}
+.phone-reservation .content .reservation__content .step1 .vip-banner p strong {
+  display: block;
+  font-weight: normal;
+  font-size: 3.2em;
+}
+.phone-reservation .content .reservation__content .step1 .vip-banner ul {
+  width: 100%;
+  background: #2b4753;
+  padding: 30px 30px 40px;
+}
+.phone-reservation .content .reservation__content .step1 .vip-banner ul li {
+  color: white;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1.05em;
+}
+.phone-reservation .content .reservation__content .step1 .vip-banner ul li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+  display: block;
+  margin-right: 8px;
+}
+.phone-reservation .content .reservation__content .step1 .vip-banner .vip-btn {
+  position: absolute;
+  bottom: -20px;
+  right: 50px;
+  padding: 15px 50px;
+  background: #ffd280;
+  border: 2px solid black;
+  font-size: 1.1em;
+}
+.phone-reservation .content .reservation__content .step1 .form-content > div, .phone-reservation .content .reservation__content .step1 .form-content > button {
+  width: 100%;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont {
+  width: 100%;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-header {
+  position: relative;
+  padding: 15px 0;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-header button {
+  position: absolute;
+  padding: 10px;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-header button.go-prev {
+  left: 15%;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-header button.go-next {
+  right: 15%;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-header .year-month {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4em;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-body .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 20px 0;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-body .days .day {
+  text-align: center;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-body .dates {
+  padding: 20px 0 30px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-body .dates .date {
+  padding: 15px 0;
+  font-family: "Roboto", sans-serif;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-body .dates .date.other, .phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-body .dates .date.past, .phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-body .dates .date:nth-child(7n), .phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-body .dates .date:nth-child(7n+1) {
+  color: #cfcfcf;
+  cursor: initial;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-body .dates .date.this.today {
+  font-weight: bold;
+  background: #fcf8e3;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont .calendar-body .dates .date.this.active {
+  background: #ff7272;
+  color: white;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .calendar-cont > span {
+  color: #e4130c;
+  display: block;
+  padding-bottom: 10px;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-date,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time {
+  display: flex;
+  padding: 20px 30px;
+  border-bottom: 1px solid #cfcfcf;
+  font-size: 1.15em;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-date > span,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time > span {
+  width: 130px;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-date p,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-date p.active,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time p.active {
+  color: black;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time p {
+  display: flex;
+  cursor: pointer;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time p.active {
+  color: black;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time p.active span {
+  color: #e4130c;
+  margin-left: 10px;
+  margin-right: auto;
+  font-weight: bold;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list {
+  display: none;
+  padding: 30px;
+  border: 1px solid #cfcfcf;
+  border-top: none;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list.active {
+  display: block;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am {
+  margin-bottom: 20px;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .pm {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am div,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .pm div {
+  display: flex;
+  justify-content: flex-end;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am div span,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .pm div span {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am div span::before,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .pm div span::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am div span:first-child::before,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .pm div span:first-child::before {
+  background: #e4130c;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am div span:last-child::before,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .pm div span:last-child::before {
+  background: #cfcfcf;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am .time-list,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .pm .time-list {
+  grid-column: span 2;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(13, 1fr);
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am .time-list button,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .pm .time-list button {
+  font-family: "Roboto", sans-serif;
+  background: #eeeef0;
+  color: #9c9c9c;
+  padding: 7px 0;
+  border-radius: 5px;
+  cursor: initial;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am .time-list button.active,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .pm .time-list button.active {
+  background: #e4130c;
+  color: white;
+  cursor: pointer;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .am .time-list button.active:hover,
+.phone-reservation .content .reservation__content .step1 .form-content .reserve-time-list .pm .time-list button.active:hover {
+  background: #bb0000;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .next-btn {
+  margin-top: 10px;
+  padding: 15px;
+  background: #e2e2e2;
+  color: #666;
+  position: relative;
+  font-weight: bold;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .next-btn i {
+  position: absolute;
+  right: 10px;
+}
+.phone-reservation .content .reservation__content .step1 .form-content .next-btn.on {
+  background: #e4130c;
+  color: white;
+}
+.phone-reservation .content .reservation__content .step1 .reservation__info {
+  margin: 40px 0;
+  padding: 30px;
+  border: 3px solid #e9e9e9;
+}
+.phone-reservation .content .reservation__content .step1 .reservation__info li {
+  padding: 5px 0;
+  margin-left: 15px;
+  line-height: 1.3;
+  list-style: disc;
+}
+.phone-reservation .content .reservation__content .step1 .reservation__info li a {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #cfcfcf;
+  display: inline-block;
+}
+.phone-reservation .content .reservation__content .step1 .reservation__info li a:hover {
+  background: #cfcfcf;
+}
+.phone-reservation .content .reservation__content .step1 .reservation__info li span {
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 0 5px;
+  background: #e4130c;
+  color: white;
+}
+.phone-reservation .content .reservation__content .step2 {
+  margin-top: 30px;
+  display: none;
+}
+.phone-reservation .content .reservation__content .step2 .wrap {
+  padding-bottom: 60px;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-title {
+  padding: 0;
+  margin-top: 15px;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  padding-bottom: 190px;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-radio li {
+  padding: 5px 0 5px 20px;
+  display: flex;
+  align-items: center;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-radio li input[type=radio] {
+  margin-right: 5px;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-radio li textarea {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  left: 0;
+  bottom: 25px;
+  padding: 15px;
+  border: 1px solid #cfcfcf;
+  resize: none;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-customer {
+  display: flex;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-customer > div {
+  width: 50%;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-customer > div label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-customer > div input {
+  padding: 8px;
+  font-size: 0.95em;
+  letter-spacing: -0.03em;
+  border: 1px solid #bbb;
+  color: #555;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-customer > div input[type=number]::-webkit-outer-spin-button, .phone-reservation .content .reservation__content .step2 .wrap .form-customer > div input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-btn {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 10px;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-btn button {
+  padding: 15px 0;
+  color: white;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-btn button.prev-btn {
+  background: #adadad;
+  position: relative;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-btn button.prev-btn i {
+  position: absolute;
+  left: 10px;
+}
+.phone-reservation .content .reservation__content .step2 .wrap .form-btn button.submit-btn {
+  background: #e4130c;
+}
+.phone-reservation .content .reservation__content .step3 {
+  display: none;
+  border: 3px solid #e9e9e9;
+  padding: 70px;
+  flex-direction: column;
+  align-items: center;
+}
+.phone-reservation .content .reservation__content .step3 h3 {
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+.phone-reservation .content .reservation__content .step3 button {
+  background: #e4130c;
+  padding: 10px 80px 12px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}

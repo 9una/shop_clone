@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/reset.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <title>주문하기</title>
+</head>
+<body>
+    <header id="header"></header>
+    <!-- header - e -->
+    <div id="container" class="order">
+        <div class="location">
+            <div class="wrapper">
+                <a href="index.html" class="location-link">HOME</a>
+                <a href="order.html" class="location-link">주문서 작성 / 결제</a>
+            </div>
+        </div>
+        <section>
+            <div class="wrapper">
+                <div class="order__title">
+                    <h3 class="section__title">주문서작성/결제</h3>
+                    <div class="order-location">
+                        <span class="location"><b>01</b> 장바구니</span>
+                        <span class="location active"><b>02</b> 주문서작성/결제</span>
+                        <span class="location"><b>03</b> 주문완료</span>
+                    </div>
+                </div>
+                <div class="order__content">
+                    <div class="cont order-list">
+                        <div class="cont-title">
+                            <h4>주문상품</h4>
+                            <span class="order-name"></span>
+                            <button type="button" onclick="listToggle(event)"><i class="fas fa-chevron-up"></i></button>
+                        </div>
+                        <div class="basket">
+                            <!-- head -->
+                            <div class="row head">
+                                <div class="name">상품/옵션 정보</div>
+                                <div>상품금액</div>
+                                <div>수량</div>
+                                <div>합계금액</div>
+                            </div>
+                            <!-- data -->
+                            <div class="row data">
+                                <div class="item">
+                                    <div class="name">
+                                        <div class="img">
+                                            <img src="img/goods/goods-view-1.jpg" alt="앤틱 크라프트 캐리어 50개"/>
+                                        </div>
+                                        <div class="p_name">
+                                            <span>앤틱 크라프트 캐리어 50개</span>
+                                            <span class="coupon">
+                                                <img src="img/coupon.png" alt="쿠폰이미지" />
+                                                <b>2,000원</b> 할인
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="basketprice">
+                                            <input type="hidden" class="p_price">11,500원
+                                            <!-- <span>(개별 배송비 포함가 <i class="fas fa-question-circle"></i>)</span> -->
+                                        </div>
+                                        <div class="num">
+                                            <p><span class="p_num">2</span>개</p>
+                                        </div>
+                                        <div class="sum">
+                                            <input type="hidden" class="sum_price" value="23000">23,000원
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        <div class="img">
+                                            <img src="img/goods/goods-list-2.jpg" alt="세미 베버시티 고구마라떼 페이스트 1kg"/>
+                                        </div>
+                                        <div class="p_name">
+                                            <span>세미 베버시티 고구마라떼 페이스트 1kg</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="basketprice">
+                                            <input type="hidden" class="p_price">6,800원
+                                        </div>
+                                        <div class="num">
+                                            <p><span class="p_num">1</span>개</p>
+                                        </div>
+                                        <div class="sum">
+                                            <input type="hidden" class="sum_price" value="6800">6,800원
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        <div class="img">
+                                            <img src="img/goods/goods-list-4.jpg" alt="세미 베버시티 고구마라떼 페이스트(스틱) 80g 12개입/1팩"/>
+                                        </div>
+                                        <div class="p_name">
+                                            <span>세미 베버시티 고구마라떼 페이스트(스틱) 80g 12개입/1팩</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="basketprice">
+                                            <input type="hidden" class="p_price">9,600원
+                                        </div>
+                                        <div class="num">
+                                            <p><span class="p_num">1</span>개</p>
+                                        </div>
+                                        <div class="sum">
+                                            <input type="hidden" class="sum_price" value="9600">9,600원
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="name">
+                                        <div class="img">
+                                            <img src="img/goods/goods-list-6.jpg" alt="세미 베버시티 녹차라떼 500g"/>
+                                        </div>
+                                        <div class="p_name">
+                                            <span>세미 베버시티 녹차라떼 500g</span>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="basketprice">
+                                            <input type="hidden" class="p_price">6,800원
+                                        </div>
+                                        <div class="num">
+                                            <p><span class="p_num">3</span>개</p>
+                                        </div>
+                                        <div class="sum">
+                                            <input type="hidden" class="sum_price" value="20400">20,400원
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__info">
+                    <form>
+                        <div class="guest-agreement">
+                            <h5 class="info-title">상품 공급사 개인정보 제공 동의</h5>
+                            <div class="cont-text">
+                                <div class="text">
+                                    <p>
+                                        - 제공받는 자 : 공급사 판매자<br>
+                                        - 이용목적 : 판매자와 구매자의 거래의 원활한 진행, 본인의사의 확인, 고객 상담 및 불만처리, 상품과 경품 배송을 위한 배송지 확인 등<br>
+                                        - 제공항목 : 구매자 이름, 전화번호, ID, 휴대폰번호, 이메일주소, 상품 구매정보, 상품 수취인 정보(이름, 주소, 전화번호)<br>
+                                        - 보유/이용기간 : 배송완료 후 한달
+                                    </p>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" id="agreement" required>
+                                    <label for="agreement"><b>(필수)</b> 상품 공급사 개인정보 제공 동의에 대한 내용을 확인 하였으며 이에 동의합니다.</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer">
+                            <h5 class="info-title">주문자 정보</h5>
+                            <div class="cont-form">
+                                <table>
+                                    <tr class="required">
+                                        <th scope="row">주문자</th>
+                                        <td><input type="text" required value="천근아"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">주소</th>
+                                        <td>경기도 고양시 일산서구 일산동 655-691 일산역</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">전화번호</th>
+                                        <td><input type="number"></td>
+                                    </tr>
+                                    <tr class="required">
+                                        <th scope="row">휴대폰 번호</th>
+                                        <td><input type="number" required value="0101234567"></td>
+                                    </tr>
+                                    <tr class="required">
+                                        <th scope="row">이메일</th>
+                                        <td>
+                                            <input type="text" required value="emailaddress@naver.com">
+                                            <select>
+                                                <option>직접입력</option>
+                                                <option>naver.com</option>
+                                                <option>hanmail.net</option>
+                                                <option>google.com</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <h5 class="info-title">배송지</h5>
+                            <div class="cont-form">
+                                <table>
+                                    <tr class="address-type">
+                                        <th scope="row">배송지 확인</th>
+                                        <td>
+                                            <input type="radio" name="adress" id="basic" checked>
+                                            <label for="basic">기본 배송지</label>
+                                            <input type="radio" name="adress" id="recently">
+                                            <label for="recently">최근 배송지</label>
+                                            <input type="radio" name="adress" id="write">
+                                            <label for="write">직접 입력</label>
+                                            <input type="radio" name="adress" id="user">
+                                            <label for="user">주문자 정보와 동일</label>
+                                            <button type="button">배송지 관리</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="required">
+                                        <th scope="row">받으시는 분</th>
+                                        <td><input type="text" required value="고객명"></td>
+                                    </tr>
+                                    <tr class="required">
+                                        <th scope="row">받으실 곳</th>
+                                        <td class="shipping-address">
+                                            <span>
+                                                <input type="text" required value="10353 (-)">
+                                                <button>우편번호 검색</button>
+                                            </span>
+                                            <span>
+                                                <input type="text" required value="경기도 고양시 일산서구 일산동 655-691">
+                                                <input type="text" required value="일산역">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">전화번호</th>
+                                        <td><input type="number"></td>
+                                    </tr>
+                                    <tr class="required">
+                                        <th scope="row">휴대폰 번호</th>
+                                        <td><input type="number" required></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">회원정보 반영</th>
+                                        <td>
+                                            <input type="checkbox" id="save">
+                                            <label for="save">위 내용을 회원정보에 반영합니다. (주소/전화번호/휴대폰번호)</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="delivery">
+                            <h5 class="info-title">배송방법</h5>
+                            <div class="cont-form">
+                                <table>
+                                    <tr class="required">
+                                        <th scope="row">배송방법 선택</th>
+                                        <td>
+                                            <input type="radio" name="delivery" id="directly" checked>
+                                            <label for="directly">번개배송</label>
+                                            <input type="radio" name="delivery" id="cj">
+                                            <label for="cj">CJ 대한통운</label>
+                                            <span>※ 금일 오전 10시전 주문시 당일발송, 오후 수령</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">남기실 말씀</th>
+                                        <td><input type="text" ></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <h5 class="info-title">할인/혜택적용</h5>
+                            <div class="cont-form">
+                                <table>
+                                    <tr>
+                                        <th scope="row">쿠폰</th>
+                                        <td>
+                                            <button type="button">2,000원 쿠폰할인 <i class="fas fa-chevron-right"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">마일리지</th>
+                                        <td class="spend-all-possible mileage">
+                                            <span>
+                                                <input type="text" id="mileageNumber" name="mileageNumber"  placeholder="마일리지를 입력해주세요" maxlength='5' style="ime-mode:disabled" onkeyup="inputNumMileage(this)" value="1,500">
+                                                <button type="button" class="useall-btn">모두 사용</button>
+                                            </span>
+                                            <span class="spendAll">(사용가능 마일리지 <b>1,500</b>원)</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">예치금</th>
+                                        <td class="spend-all-possible deposit">
+                                            <span>
+                                                <input type="text" id="depositNumber" name="depositNumber"  placeholder="예치금을 입력해주세요" maxlength="5" style="ime-mode:disabled" onkeyup="inputNumDeposit(this)" value="3,000">
+                                                <button type="button" class="useall-btn">모두 사용</button>
+                                            </span>
+                                            <span class="spendAll">(사용가능 예치금 <b>3,000</b>원)</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">사은품교환</th>
+                                        <td>
+                                            <button type="button">포인트 12,730점 <i class="fas fa-chevron-right"></i></button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="total-price">
+                            <p><b>최종결제금액</b><br><strong></strong>원 <i class="fas fa-chevron-down"></i></p>
+                            <div class="price-details">
+                                <div class="item-all-price">
+                                    <span>상품합계</span>
+                                    <span><b></b>원</span>
+                                </div>
+                                <div class="point-use">
+                                    <span>마일리지/예치금</span>
+                                    <input type="hidden" class="point_p" value="4500">
+                                    <span><b>4,500</b>원</span>
+                                </div>
+                                <div class="coupon-use">
+                                    <span>쿠폰할인</span>
+                                    <input type="hidden" class="coupon_p" value="2000">
+                                    <span><b>2,000</b>원</span>
+                                </div>
+                                <div class="delivery-plus">
+                                    <button type="button">배송비 <i class="fas fa-chevron-down"></i></button>
+                                    <input type="hidden" class="delivery_p" value="2500">
+                                    <span><b>2,500</b>원</span>
+                                </div>
+                                <div class="delivery-detail" style="display:block;">
+                                    <p>기본배송비<b>0</b>원</p>
+                                    <p>업체배송비<b>2,500</b>원</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <h5 class="info-title">결제수단 선택/결제</h5>
+                            <p>※ 고객님은 안전거래를 위해 현금으로 결제시 쇼핑몰에서 가입한 구매안전서비스인 이지페이의 구매안전(에스크로)서비스를 이용하실 수 있습니다.</p>
+                            <div class="cont-form">
+                                <table>
+                                    <tr>
+                                        <th scope="row">일반결제</th>
+                                        <td>
+                                            <div class="payment-type">
+                                                <input type="radio" checked name="payment" id="easypay">
+                                                <label for="easypay">간편결제</label>
+                                            </div>
+                                            <div class="payment-type">
+                                                <input type="radio" name="payment" id="nobankbook">
+                                                <label for="nobankbook">무통장 입금</label>
+                                            </div>
+                                            <div class="payment-type">
+                                                <input type="radio" name="payment" id="creditcard">
+                                                <label for="creditcard">신용카드</label>
+                                            </div>
+                                            <div class="payment-type">
+                                                <input type="radio" name="payment" id="transfer">
+                                                <label for="transfer">계좌이체</label>
+                                            </div>
+                                            <div class="payment-type">
+                                                <input type="radio" name="payment" id="virtual">
+                                                <label for="virtual">가상계좌</label>
+                                            </div>
+                                            <div class="payment-type">
+                                                <input type="radio" name="payment" id="naverpay">
+                                                <label for="naverpay">네이버페이</label>
+                                            </div>
+                                            <div class="payment-type">
+                                                <input type="radio" name="payment" id="payco">
+                                                <label for="payco">PAYCO</label>
+                                            </div>
+                                            <div class="payment-tab">
+                                                <p>(간편결제로 결제 할 카드를 미리 등록해 놓으면 주문을 빠르게 할 수 있습니다.)</p>
+                                                <div>
+                                                    <button type="button">+ 신용/체크 카드 등록</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">에스크로결제</th>
+                                        <td>
+                                            <div class="payment-type">
+                                                <input type="radio" name="payment" id="transferEscrow">
+                                                <label for="transferEscrow">계좌이체</label>
+                                            </div>
+                                            <div class="payment-type">
+                                                <input type="radio" name="payment" id="virtualEscrow">
+                                                <label for="virtualEscrow">가상계좌</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <button type="submit" class="order-btn" >결제하기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- container - e -->
+    <footer id="footer"></footer>
+    <!-- footer - e -->
+
+
+    <!-- js -->
+    <script src="https://kit.fontawesome.com/3701dcbbf4.js" crossorigin="anonymous" ></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    
+    <script src="./js/index.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/order.js"></script>
+</body>
+</html>
